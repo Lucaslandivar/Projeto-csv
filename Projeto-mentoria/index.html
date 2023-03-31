@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto CTD</title>
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
+    <!-- Barra de navegação -->
     <header>
         <nav>
             <div id="nav-bar">
                 <div id="nav-bar-inner">
-                    <h2>Conquiste sua vaga!</h2>
+                    <h1>Conquiste sua vaga!</h1>
+                    <div class="nav-bar-csv"></div>
                     <ul id="nav-bar-links">
                         <li>
                         </li>
@@ -30,5 +34,113 @@
             </div>
         </nav>
     </header>
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <main id="post-container">
+            <article class="post mentores">
+                <h2 class="title">Mentores</h2>
+                <p class="description">Os mentores de Conquiste sua vaga compartilham seus conhecimentos e suas experiências com a finalidade de realizar os sonhos dos seus mentorados em conseguir a sua primeira vaga de emprego!</p>
+            </article>
+            <article class="blog">
+                <h2 class="title">Como eles fazem isso?</h2>
+                <p class="description">Eles conseguem realizar os seus sonhos atravez de aulas ao vivo, atividades e novos métodos de estudo como <a href="https://brasilescola.uol.com.br/dicas-de-estudo/tecnica-pomodoro-que-e-e-como-funciona.htm#:~:text=Pomodoro%20significa%20tomate%20em%20italiano,destes%20equivale%20a%2030%20minutos.">o metodo de Pomodoro</a> e métodos eficazes de programação como <a href="#">CTD</a> (Código todo o dia), também estão bastante ativos nas comunidades, onde dedicam a maioria do seu tempo ajudando particularmente cada aluno.</p>
+            </article>
+            <section class="advantages">
+                <ul>
+                    <li>
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Segurança</h3>
+                        <p>Com a comunidade e as direções dos mentores o sonho de um emprego como programador não será mais um sonho, se não uma consequência dos metodos aplicados e o tempo dedicado.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <i class="fas fa-rocket"></i>
+                        <h3>Sucesso</h3>
+                        <p>Com a comunidade, os projetos e os conhecimentos adquiridos na jornada, o sucesso será seguro.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <i class="fas fa-comments"></i>
+                        <h3>Suporte 24/7</h3>
+                        <p>Os mentores estão disponiveis todos os dias em todas as plataformas! Principalmente no Discord, onde a comunidade é muito ativa, garantindo novos métodos de aprender com pessoas que estão aprendendo também ou já estão trabalhando na área, o qual pode ser muito útil para aprender mais.</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="procurarvaga-container">
+                <h2>Em qual empresa na área da programação você quer trabalhar?</h2>
+                <form>
+                  <input
+                    type="text"
+                    name="domain"
+                    id="domain"
+                    placeholder="Digite a empresa desejada"
+                  />
+                  <input type="submit" value="Procurar empresa" />
+                </form>
+              </section>
+              <section class="contact-container">
+                <h2>Mande uma mensagem</h2>
+                <p>
+                  Envie a sua mensagem, em até 4 horas um mentor entrará em
+                  contato.
+                </p>
+                <form>
+                  <input type="text" name="name" id="name" placeholder="Seu nome" />
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Seu e-mail"
+                  />
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Descreva o que você precisa ou o seu projeto..."
+                  ></textarea>
+                  <input type="submit" value="Enviar" />
+                </form>
+              </section>
+        </main>
+        <aside id="sidebar">
+            <section id="search-bar">
+              <h4>Buscar</h4>
+              <form>
+                <input type="text" placeholder="Pesquise no blog" />
+                <input type="submit" value="Buscar" />
+              </form>
+            </section>
+            <section id="categories">
+              <h4>Áreas</h4>
+              <nav>
+                <ul>
+                  <li><a href="#">Front-end</a></li>
+                  <li><a href="#">Back-end</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                  <li><a href="#">React</a></li>
+                  <li><a href="#">Full-stack</a></li>
+                </ul>
+              </nav>
+            </section>
+    </div>
+    <footer>
+        <nav>
+          <ul id="footer-links">
+            <li><a href="#">Conquiste sua vaga</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">Nutor</a></li>
+            <li><a href="#">Privacidade</a></li>
+            <li><a href="#">Termos</a></li>
+            <li><a href="#">Turma</a></li>
+            <li><a href="#">Hashtags</a></li>
+            <li><a href="#">Localização</a></li>
+            <li><a href="#">Discord</a></li>
+          </ul>
+        </nav>
+        <p id="copyright">&copy;2023 Conquiste Sua Vaga</p>
+      </footer>
 </body>
 </html>
